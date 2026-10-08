@@ -1,0 +1,37 @@
+{
+	"name": "AzureSqlTable3P2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ORDER_ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "CONTANCT_NAME",
+				"type": "varchar"
+			},
+			{
+				"name": "INSERT_TIME",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "ORDERS_FINAL"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
